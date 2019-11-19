@@ -1,10 +1,7 @@
-import React from 'react';
-import ReactDOM from 'react-dom'
+import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
+import Main from './Components/Main'
 
-const tasks = ['take out the trask', 'shovel drivway', 'walk dog'];
 
-const element = React.createElement('ol', null,
-  tasks.map((task) => React.createElement('li', null, task))
-);
 
-ReactDOM.render(element, document.getElementById('root'));
+ReactDOM.render(<Main/>, document.getElementById('root'));
